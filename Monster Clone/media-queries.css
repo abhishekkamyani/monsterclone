@@ -1,0 +1,176 @@
+@media screen and (max-width: 991px){
+    /* cards-section */
+    .career-cards{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+
+    /* nav-bar */
+    .nav-bar{
+        overflow: initial;        /* like overflow: visible (from hidden to visible) */
+        transition: 0.2s ease-out;
+    }
+
+    /* for upper nav bg i js file*/
+    .bg-dark-purple{
+        background-color: #230939;
+    }
+    .upper-nav .logo{
+        /* display: none; */
+        float: none;
+    }
+
+    /* d-block for .logo IN JS*/
+    
+    .sign-buttons{
+        float: left;
+        display: none;
+    }
+    /* .sign-buttons d-block*/
+    .d-block{
+        display: block;
+    }
+
+    .nav-toggle{
+        display: block;
+        float: right;
+        align-self: flex-end;
+    }
+    /* color-white for nav-toggle */
+    .color-white{
+        color: #ffffff;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: #402965;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-out;
+        padding-inline: 0;
+    }
+    .active{
+        left: 0;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        float: none;
+        align-items: flex-start;
+        padding-block: 10px;
+        /* padding-bottom: 100vh; */
+    }
+    .nav-links ul li{
+        border-bottom: 1px solid #B051AA;
+        display: block;
+        width: 100%;
+    }
+    .nav-links ul li a{
+        color: #ffffff;
+        padding-inline: 20px;
+    }
+
+    /* head */
+    .upper-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lower-header, .upper-header .fa-magnifying-glass, #location{
+        display: none;
+    }
+    .search-bars{
+        width: 70%;
+        border-radius: 50px;
+    }
+    .search-bars input#jobs{
+        flex-grow: 2;
+        border: 0px;
+        border-radius: 50px;
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    /* hero section */
+    .left-hero{
+        display: none;
+    }
+    .right-hero{
+        text-align: center;
+    }
+
+    /* cards-section */
+    .career-cards{
+        width: 45%;
+    }
+
+    /* ad section */
+    .ad-section{
+        padding: 0px;
+    }
+    .ad-container{
+        flex-direction: column;
+        min-height: 150vh;
+    }
+    .right-ad{
+        background-size: contain;
+        border-radius: 0;
+    }
+    .left-ad{
+        position: static;
+        height: auto;
+        flex: 0 0 0;
+        text-align: center;
+        padding: 40px 20px;
+        border-radius: 0;
+    }
+    .ad-desc{
+        position: static;
+    }
+    .stores{
+        flex-direction: column;
+    }
+    .stores img{
+        width: auto;
+    }
+
+    /* footer */
+    footer{
+        padding-block: 40px;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+    }
+    .link-column{
+        align-items: center;
+    }
+
+    /* main nav */
+    /* .active{
+        display: none;
+    } */
+}
+
+@media screen and (max-width: 479px){
+    /* cards-section */
+    .career-cards{
+        width: 65%;
+    }
+    .ad-container{
+        min-height: 70vh;
+    }
+}
